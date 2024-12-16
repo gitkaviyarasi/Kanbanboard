@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     console.log(loginCheck);
-    checkLogin();
+       checkLogin();
   }, [loginCheck])
 
   return (
@@ -30,11 +30,21 @@ const Navbar = () => {
             </button>
           </li>
         ) : (
+          <>
+          <li>
+          <div className='nav-item'>
+            <button type='button' id='create-ticket-link'>
+              <Link to='/create' >New Ticket</Link>
+            </button>
+            </div>
+          </li>
           <li className='nav-item'>
             <button type='button' onClick={() => {
               auth.logout();
             }}>Logout</button>
           </li>
+          
+          </>
         )
       }
       </ul>
