@@ -1,5 +1,5 @@
 import { useEffect, useState, useLayoutEffect } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import { retrieveTickets, deleteTicket } from '../api/ticketAPI';
 import ErrorPage from './ErrorPage';
@@ -66,10 +66,10 @@ const Board = () => {
           </h1>
         </div>  
       ) : (
-          <div className='board'>
-            <button type='button' id='create-ticket-link'>
-              <Link to='/create' >New Ticket</Link>
-            </button>
+          // <div className='board'>
+          //   <button type='button' id='create-ticket-link'>
+          //     <Link to='/create' >New Ticket</Link>
+          //   </button>
             <div className='board-display'>
               {boardStates.map((status) => {
                 const filteredTickets = tickets.filter(ticket => ticket.status === status);
@@ -83,7 +83,7 @@ const Board = () => {
                 );
               })}
             </div>
-          </div>
+          // </div>
         )
     }
     </>
