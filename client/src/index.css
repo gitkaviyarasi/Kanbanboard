@@ -28,7 +28,11 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  /* color: #535bf2; */
+  border-color: #f30458;
+  color: #e3185f;
+  background-color: #f9afc9;
+ 
 }
 
 body {
@@ -57,9 +61,13 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  background-color: #c46486;
+  border: 2px,solid,#e3185f;
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #f30458;
+  color: #e3185f;
+  background-color: #f9afc9;
 }
 button:focus,
 button:focus-visible {
@@ -105,13 +113,19 @@ tbody tr:nth-child(odd) {
 }
 
 .nav-title a {
-  color: #b864c4;
+  color: #c46486;
+  font-size: 3rem;
+  text-align: center;
+  padding-left: 15rem;
+  
 }
 
 .nav-item {
   display: block;
   margin-left: auto;
   list-style: none;
+  margin: 3px;
+  /* background-color: #c46486; */
 }
 
 .nav-link {
@@ -128,8 +142,14 @@ tbody tr:nth-child(odd) {
   table-layout: fixed;
 }
 
+ul{
+  list-style-type: none;
+}
+
+
 .board {
   width: 100%;
+
 }
 
 .board-display {
@@ -140,22 +160,27 @@ tbody tr:nth-child(odd) {
   text-align: center;
   font-weight: 500;
   width: 33%;
-  height: 90vh; 
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  margin: 5px;
-  padding: 5px;
+  /* height: 90vh;  */
+  height: auto;
+  border: 1px solid rgba(57, 54, 54, 0.2);
+  margin: 2rem;
+  padding: 15px;
 }
 
 .todo {
-  background-color: #e9cbec;
+  background-color: #FA9E9E;
+  
+  /* background-color: #e9cbec; */
 }
 
 .inprogress {
-  background-color: #b864c4;
+  background-color: #FFa099;
+  /* background-color: #b864c4; */
 }
 
 .done {
-  background-color: #732381;
+  background-color: #f98b8b;
+  /* background-color: #732381; */
 }
 
 .ticket-card {
@@ -165,7 +190,7 @@ tbody tr:nth-child(odd) {
   margin-bottom: 10px;
   border-radius: 4px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  border: 0.1em solid black;
+  border: 0.1em solid rgb(26, 26, 26);
 }
 
 .container {
@@ -179,11 +204,25 @@ tbody tr:nth-child(odd) {
   margin-left: auto;
 }
 
+.SortDropdown{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem; 
+}
+.linedisplay {
+  display: flex; /* Use flexbox to align items in a row */
+  gap: 10px; /* Optional: adds space between the items */
+}
+
+.linedisplay h3 {
+  margin: 0; /* Remove default margin from h3 elements */
+}
 
 .form {
   width: 60%;
   height: 80%;
-  background-color: #b864c4;
+  background-color: #f98b8b;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -192,7 +231,7 @@ tbody tr:nth-child(odd) {
 }
 
 .form > h1, .form > label {
-  color: yellow;
+  color: #000
 }
 
 .form > input {
@@ -222,6 +261,7 @@ tbody tr:nth-child(odd) {
   padding: 0.6em 1.2em;
   cursor: pointer;
   transition: border-color 0.25s;
+  border: 2px,solid,#e3185f;
 }
 
 .deleteBtn {
@@ -229,17 +269,23 @@ tbody tr:nth-child(odd) {
   font-weight: 500;
   color: black;
   text-decoration: inherit;
+  margin: .9rem;
+  border: 2px,solid,#e3185f;
+
 }
 
-.deleteBtn:hover {
+/* .deleteBtn:hover {
   color: #535bf2;
-}
+} */
 
 .login-notice {
   display: flex;
   width: 100%;
   align-items: center;
   justify-content: center;
+  color:#c46486;
+  font-size: 1rem;
+  
 }
 
 
@@ -248,9 +294,9 @@ tbody tr:nth-child(odd) {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
+  /* a:hover {
     color: #747bff;
-  }
+  } */
   button {
     background-color: #f9f9f9;
   }
